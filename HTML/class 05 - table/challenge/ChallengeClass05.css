@@ -1,0 +1,25 @@
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+caption{
+    font-size: 22px;
+}
+thead{
+    background-color: #00ff66;
+}
+th, td{
+    border: solid 1px;
+    width: 45px;
+    padding: 4px;
+}
+img{
+    width: 40px;
+    border: solid 1px #000;
+}
+.altura{
+    height: 25px;
+}
+.cor{
+    background-color: #00ff66;
+}

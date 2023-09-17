@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.square{
+    background-color: black;
+    height: 120px;
+    width: 120px;
+    padding: 16px;
+}
+#squarea{
+background-color: aqua;
+/*margin-top: 32px;
+
+margin-left: 32px; Vamos invalidar estes margin para testarmos o SHORTHAND
+
+margin: 24px 32px;
+
+Se colocar duas info o 1° é top e bottom e o 2° left e right;
+Se colocar 3 o 1° é top, 2° é right e left, 3° é bottom;
+Se colocar 4, funciona no sentido horário, imagine um relógio e pense nas posições dele, a ordem é em sentido horário
+Ou seja, 1° é top, 2° é right, 3° é bottom e 4° é left "ALTERNANDO"
+
+margin: 12px 8px 12px 8px;
+*/
+position: absolute;
+left: 0px;
+bottom: 0px;
+z-index: 1;
+}
+#squareb{
+    background-color: cornflowerblue;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 2;
+}
+#squarec{
+    background-color: brown;
+    display: inline-block;
+    margin: 32px 0px 0px 32px;
+}
+#squared{
+    background-color: darkkhaki;
+    display: inline-block;
+}

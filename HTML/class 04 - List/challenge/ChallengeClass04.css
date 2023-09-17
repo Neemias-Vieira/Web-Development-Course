@@ -1,0 +1,20 @@
+img{
+    height: 200px;
+}
+.destaque{
+    color: #f25e5e;
+}
+
+header, main, footer{
+    width: 320px;
+    margin: auto;
+}
+#mp{
+    color: #f25e5e;
+}
+a{
+    font-weight: bold;
+}
+p{
+    text-align: center;
+}
