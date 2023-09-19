@@ -47,7 +47,7 @@ console.log(`Action: ${pokemon.attack()}`);
 console.log(`Action: ${pokemon.special()}`); 
 
 
-// Array (Vector)
+// Array (Vectorc)
 
 let pokedex = ["Charmander", 6, "Bulbsaour", 5, "Squirtle", 4];
 
