@@ -1,13 +1,12 @@
 //  Crie uma função capaz de retornar um número aleatório dentro de
 //  um intervalo determinado por parâmetros min(mínimo) e max(máximo).
 
-let menor = Number(prompt("digite o mínimo"));
-let maior = Number(prompt("digite o máximo"));
+function randomNumber(){
+    let min = Number(prompt("Insira o número mínimo"));
+    let max = Number(prompt("Insira o número máximo"));
 
-const sorteio = () => {
-    
-    return (Math.floor(Math.random() * (maior - menor + 1)) + menor);
-     
+    return Math.floor(Math.random() * ((max - min) + 1) + min);
 }
 
-document.write(sorteio());
+
+console.log(randomNumber());
