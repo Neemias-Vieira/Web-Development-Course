@@ -46,7 +46,7 @@ console.log(`${day}/${month}/${year}`);
 
 console.log(dateNow.toLocaleDateString("pt-BR",{
     day: "2-digit",
-    month: "short",
+    month: "numeric",
     year: "numeric",
 }));
 
