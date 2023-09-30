@@ -52,7 +52,11 @@ console.log(myName.slice(0, 3)); // se colocado dois números, ele preserva o í
 console.log(arrayTechs);
 console.log(arrayTechs.slice(-3, -1)); //  Inverte a ordem quando for negativo (1 é exclusivo)
 
-console.log(arrayTechs.splice(-1));
-console.log(arrayTechs); // o slice remomveu o índice indicado
+
+    // (x, y) o x é onde começa e o y a quantidade de casas a partir do x (x é incluso), estes serão deletados
+    // (x, y, "change") faz o mesmo que (x, y), e substitui o y pelo valor string
+    // (x) ele conta a partir do indice 0, e vai até o x. Este periodo é salvo e exlui o resto
+console.log(arrayTechs.splice(2)); 
+console.log(arrayTechs); // o splice remomoveu o índice indicado
 
 console.log(myArray.concat(arrayTechs)); // concatena os arrays
