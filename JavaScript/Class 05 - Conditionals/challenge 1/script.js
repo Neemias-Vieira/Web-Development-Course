@@ -4,7 +4,7 @@
 
 document.addEventListener("keydown", function(event) {
    if (event.key === "Enter") {
-       iniciar(); // Substitua 'minhaFuncao' pelo nome da sua função
+       iniciar(); 
    }
 });
 

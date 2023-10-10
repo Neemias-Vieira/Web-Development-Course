@@ -9,9 +9,9 @@
 // F = C * 9/5 + 32
 
 try {
-    const temperature = "15 c";
+    const temperature = prompt("teste");
     const temperatureConverted = degreeConvert(temperature);
-    console.log(`${temperature.split(" ").join("").toUpperCase()} = ${temperatureConverted}`);
+    document.write(`${temperature.split(" ").join("").toUpperCase()} = ${temperatureConverted}`);
   } catch (error) {
     console.error(error);
   }
@@ -52,7 +52,7 @@ try {
         
            if (fahrenheit >= -273.15) {
 
-            return (fahrenheit - 32) / 1.8;
+            return ((fahrenheit - 32) / 1.8).toLocaleString("pt-BR") + "C";
            } 
            else {
             throw new Error("O valor é menor que 0 absoluto")

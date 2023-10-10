@@ -1,0 +1,22 @@
+header article section{
+    line-height: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main article section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 8px;
+}
+header article section h1{
+    font-size: 32px;
+}
+header article section p{
+    font-size: 18px;
+    color: #f00;
+}
