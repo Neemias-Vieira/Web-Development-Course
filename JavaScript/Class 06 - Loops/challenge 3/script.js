@@ -16,12 +16,13 @@ function divination(){
     let i = 0;
 
     do {
-        number = Number(prompt("Adivinhe o número"));
+        number = prompt("Adivinhe o número");
 
-        if (number === 0) {
+        if (number === null) {
         alert ("Função cancelada pelo usuário.");
         return;
         }
+        number = Number(number)
 
         i++
 
