@@ -55,3 +55,12 @@ for (const i in object) {
     console.log(i);
     console.log(myArray[i]); // Assim você tem o valor
 }
+
+for(let i = 0; i < arrayBiDi.length; i++){
+
+    for(let j = 0; j < arrayBiDi.length[i]; j++){
+
+        console.log(arrayBiDi[i][j]);
+    
+    }
+}

@@ -23,8 +23,12 @@ function divination(){
         return;
         }
         number = Number(number)
-
-        i++
+        if (number > 0 || number < 11) {
+            i++;
+        }else{
+            alert (`${number} é um número inválido, por favor clique novamente em "COMEÇAR" e digite um número de 1 e 10`);
+            return;
+        }
 
     }while (number != numberSecret);
 
