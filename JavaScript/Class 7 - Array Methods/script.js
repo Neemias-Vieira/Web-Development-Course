@@ -72,4 +72,7 @@ console.table(calculateAreas2);
 
 //  Transforme a primeira letra de palavras em maiúscula
 
-["neemias", "raissa"] 
+const names = ["raíssa", "neemias", "jefferson", "odilon", "talles"];
+
+const mostNames = names.map(value, index => {a.index});
+console.log(mostNames);
