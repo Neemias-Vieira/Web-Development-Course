@@ -77,18 +77,9 @@ console.log(pokemons[1][0]);
 
 let pokemons2 = [
 
-    {
-        name: "Charmander", 
-        level: 6
-    },
-    {
-        name: "Bulbasour",
-        level: 5
-    },
-    {
-        name: "Squirtle",
-        level: 4
-    }
+    {name: "Charmander", level: 6},
+    {name: "Bulbasour", level: 5},
+    {name: "Squirtle", level: 4}
 
 ]
 
