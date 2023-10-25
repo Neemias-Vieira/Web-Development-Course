@@ -3,7 +3,7 @@
 // Escreva uma lógica que sorteie os números da loteria de 1 a 25
 // Devem ser sorteados 15 números aleatoriamente
 // Apresente o resultado de forma ordenada
-alert(draw());
+
 
 function draw() {
     const maxValue = 25;
@@ -18,3 +18,20 @@ function draw() {
     drawList = drawList.join(" - ");
     return drawList
 }
+
+function draw2(){
+
+    let arrayNumbers = Array.from({ length: 25}, (value, index) => index + 1)
+    .sort(() => Math.random() - 0.5)
+    .filter((value, index) => index < 15)
+    .sort((a, b) => a - b);
+
+    arrayNumbers = arrayNumbers.join(" - ")
+
+    return arrayNumbers
+} 
+
+
+console.log(draw());
+console.log(" \n\n ");
+console.log(draw2());
