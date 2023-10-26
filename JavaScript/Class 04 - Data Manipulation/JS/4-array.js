@@ -33,6 +33,8 @@ console.log(removeItem + " foi removido com sucesso!");
 const removeItemSTART = arrayTechs.shift(); // Exclui do começo do array
 console.log(removeItemSTART + " foi removido com sucesso!");
 
+console.log(arrayTechs);
+
 arrayTechs.unshift("React.JS");
 arrayTechs.unshift("SQL");
 
