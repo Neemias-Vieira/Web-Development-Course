@@ -86,6 +86,9 @@ const divisão = () => {
 const restoDivisão = () => {
     return arrayNumber[0] % arrayNumber[1];
 }
+const potenciação = () => {
+    return arrayNumber[0] ** arrayNumber[1];
+}
 const raiz = () => {
     return Math.sqrt(arrayNumber[2]);
 }
@@ -97,6 +100,7 @@ console.log(subtração());
 console.log(multiplicação());
 console.log(divisão());
 console.log(restoDivisão());
+console.log(potenciação());
 console.log(raiz());
 console.log(`\n\n`);
 
@@ -133,6 +137,9 @@ console.log(`\n\n`);
 const listArray = () => {
     for (let i = 0; i < array.length; i++){
         console.log(`${array[i]}`);
+    }
+    for (const iterator of listArray) {
+        console.log(iterator);
     }
 }
 
