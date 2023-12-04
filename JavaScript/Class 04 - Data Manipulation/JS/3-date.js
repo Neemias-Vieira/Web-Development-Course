@@ -3,7 +3,7 @@ let dateNow = new Date();
 let date1 = new Date("2023-12-1 12:03:24");
 let date2 = new Date("2023-12-3 12:03:24");
 
-console.log((date2-date1) / 1000 / 60 / 60 / 24 + " dias");
+console.log((date2 - date1) / 1000 / 60 / 60 / 24 + " dias");
 console.log(0.25 * 24 + "h");
 console.log(dateNow);
 
@@ -33,9 +33,8 @@ console.log(dateNow.setMinutes(dateNow.getMinutes()));
 console.log(dateNow.setSeconds(dateNow.getSeconds()));
 console.log(dateNow.setMilliseconds(dateNow.getMilliseconds()));
 
-
- // Quando dia e mês for menor que 10 o número aparece sem o 0 a esquerda EX: 1
- // Vamos colocar padstart(2, "0"), mas é de string então iremos tranformar para string
+// Quando dia e mês for menor que 10 o número aparece sem o 0 a esquerda EX: 1
+// Vamos colocar padstart(2, "0"), mas é de string então iremos tranformar para string
 let dateNow2 = new Date();
 let day = String(dateNow2.getDate()).padStart(2, "0");
 let month = String(dateNow2.getMonth() + 1).padStart(2, "0");
@@ -44,14 +43,18 @@ let year = dateNow2.getFullYear();
 console.log(" ");
 console.log(`${day}/${month}/${year}`);
 
-console.log(dateNow.toLocaleDateString("pt-BR",{
+console.log(
+  dateNow.toLocaleDateString("pt-BR", {
     day: "2-digit",
     month: "numeric",
     year: "numeric",
-}));
+  })
+);
 
-console.log(dateNow.toLocaleDateString("pt-BR",{
+console.log(
+  dateNow.toLocaleDateString("pt-BR", {
     day: "2-digit",
     month: "long",
     year: "numeric",
-}));
+  })
+);
