@@ -11,6 +11,7 @@ export function App() {
     register,
     handleSubmit,
     formState: { errors },
+    watch,
     reset,
   } = useForm<Input>();
 
@@ -18,6 +19,9 @@ export function App() {
     console.log(data);
     reset();
   };
+
+  console.log(watch("name"));
+  console.log(watch("email"));
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
